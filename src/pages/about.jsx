@@ -49,11 +49,9 @@ const About = () => {
           </p>
           <div className="w-full flex justify-center items-center sm:flex-col sm:px-2 sm:gap-10 lg:items-start lg:justify-start lg:px-7">
             <div className="w-[30%] sm:hidden lg:hidden"></div>
-            <div className="w-[500px] sm:w-full lg:w-[600px] lg:mr-6">
+            <div className="flex justify-end gap-10">
               <p data-aos='fade-right' data-aos-delay='300'
-                className="text-[20px] text-[#2D2D2D]"
-                style={{ lineHeight: "30px" }}
-              >
+                 className="text-[20px] w-[500px] mb-16 sm:w-full  text-[#2D2D2D] leading-[30px] tracking-[-4%] text-justify">
                 With its vibrant community of changemakers, entrepreneurs, and
                 activists, Impact.t hub is redefining the traditional coworking
                 model. From sustainable design to purpose-driven initiatives,
@@ -64,33 +62,32 @@ const About = () => {
                 Impact.t hub offers the perfect environment to collaborate,
                 innovate, and make a difference.
               </p>
+              <p data-aos='fade-right' data-aos-delay='600'
+                 className="text-[#2d2d2d] w-[500px] mb-16 sm:w-full text-[20px] leading-[30px] tracking-[-4%] text-justify">
+                Join the movement today and be a part of something truly
+                transformative. With its focus on social innovation and community
+                empowerment, this coworking space is a breeding ground for
+                impactful ideas. Whether you're a social entrepreneur, activist,
+                or freelancer, Impact.t hub provides the space and resources you
+                need to turn your vision into reality. Join the community and be
+                inspired to create change.
+              </p>
+
             </div>
-            <p data-aos='fade-right' data-aos-delay='600'
-              className="text-[#2d2d2d] w-[500px] mb-[120px] sm:w-full sm:mb-0 lg:mb-[-80px]"
-              style={{ lineHeight: "30px" }}
-            >
-              Join the movement today and be a part of something truly
-              transformative. With its focus on social innovation and community
-              empowerment, this coworking space is a breeding ground for
-              impactful ideas. Whether you're a social entrepreneur, activist,
-              or freelancer, Impact.t hub provides the space and resources you
-              need to turn your vision into reality. Join the community and be
-              inspired to create change.
-            </p>
           </div>
         </div>
         <div className="w-full h-[800px]  bg-[#EDEDED] flex flex-col sm:h-auto  p-10 sm:p-0  lg:h-auto">
-          <p data-aos='fade-right' className="text-[32px] w-[423px] sm:w-full">
+          <p data-aos='fade-right' className="text-[32px] sm:w-full pl-5 w-[30%]">
             Discover a new way of working at Impact.t hub
           </p>
           <div className="w-full h-auto sm:h-[2000px] flex justify-center items-center gap-5 sm:flex-col mt-20 sm:mt-0">
             {cards.map((item, index) => (
-              <div data-aos='zoom-in'
-                key={index}
-                className="w-[407px] h-[550px] flex flex-col sm:w-[90%] "
-              >
-                <img src={item.img} alt="" />
-                <div className="w-full h-[200px] flex flex-col py-6 px-5 bg-white rounded-b-[20px]">
+                <div data-aos='zoom-in'
+                     key={index}
+                     className="w-[407px] h-[550px] flex flex-col sm:w-[90%] "
+                >
+                  <img src={item.img} alt=""/>
+                  <div className="w-full h-[200px] flex flex-col py-6 px-5 bg-white rounded-b-[20px]">
                   <p className="text-[20px] lg:text-[18px]">{item.p}</p>
                   <hr className="mt-5" />
                   <p className="text-[60px] text-[#2D2D2D]">

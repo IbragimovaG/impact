@@ -24,11 +24,9 @@ function News(props) {
             <div  className="my-14 pt-14 bg-[#EDEDED]">
                 <div className="flex justify-between">
                     <h1 className="text-2xl pl-[50px] pb-4 sm:pl-[8%]">Popular News</h1>
-                    <div className="w-3/5">
-                    </div>
                 </div>
-                <div data-aos='zoom-in' className="flex justify-around  ">
-                    <div className="card w-1/3 bg-no-repeat bg-cover relative flex justify-between text-start flex-col">
+                <div data-aos='zoom-in' className="flex justify-between px-12 gap-20">
+                    <div className="card w-1/2 bg-no-repeat bg-cover relative flex justify-between text-start flex-col">
                         <div className="relative">
                             <img
                                 src={require("../../assets/images/Group 52.png")}
@@ -39,7 +37,7 @@ function News(props) {
                         <h1 className="my-5">
                             How to hire the right product manager for your company
                         </h1>
-                        <div className="flex items-center gap-2 sm: flex-wrap    ">
+                        <div className="flex items-center gap-2 sm: flex-wrap">
                             <p className="text-[#FF5722] flex gap-2 items-center sm:text-xs">
                                 <img src={require("../../assets/images/home/vector-3.png")}/>
                                 Event
@@ -49,7 +47,7 @@ function News(props) {
                     </div>
 
                     <div
-                        className="card w-1/3 bg-no-repeat bg-cover relative  flex justify-between text-start flex-col">
+                        className="card w-1/2 bg-no-repeat bg-cover relative  flex justify-between text-start flex-col">
                         <div className="relative">
                             <img
                                 src={require("../../assets/images/IMG_4875.png")}
@@ -58,7 +56,7 @@ function News(props) {
 
                         </div>
                         <h1 className="my-5">Impact.t hub: social innovation hub</h1>
-                        <div className="flex items-center gap-2 sm: flex-wrap  ">
+                        <div className="flex items-center gap-2 sm:flex-wrap  ">
                             <p className="text-[#FF5722] flex gap-2 items-center sm:text-xs">
                                 <img src={require("../../assets/images/home/vector-1.png")}/>
                                 Blog
@@ -70,7 +68,7 @@ function News(props) {
                 <div className="flex justify-end my-8">
                 </div>
             </div>
-            <div className={"w-full gap-2 h-[100px] flex pl-[60px] sm:  pl-0 justify-between lg:justify-around sm:pl-0"}>
+            <div className={"w-full gap-2 h-[100px] flex px-[60px] sm:pl-0 justify-between lg:justify-around"}>
                 <button data-aos='zoom-in' className={"w-[120px] rounded-[30px] h-[50px] bg-[#FF5722] text-white"}>
                     All
                 </button>
@@ -85,9 +83,7 @@ function News(props) {
                 </button>
             </div>
             <div>
-
-
-                <div className=" pb-20 flex gap-10 mt-10 justify-between sm: flex-wrap justify-center items-center lg:mb-5 lg:py-4 lg:h-auto sm:pb-10">
+                <div className=" pb-20 flex gap-10 mt-10 justify-between flex-wrap justify-center items-center lg:mb-5 lg:py-4 lg:h-auto sm:pb-10 px-10">
                     <div data-aos='zoom-in' className="card w-1/3 bg-no-repeat bg-cover relative sm:w-[90%] mx-auto lg:h-[400px] w-[400px] ">
                         <div className="relative">
                             <img
@@ -211,7 +207,6 @@ function News(props) {
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </div>

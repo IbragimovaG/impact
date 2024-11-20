@@ -34,13 +34,12 @@ function Offece(props) {
             </div>
             <div className="flex w-full h-auto pb-20 gap-80 pt-32 bg-[#EBEBEB] sm:flex-col lg:flex-col">
                 <div className="ml-32 sm:ml-[30px]">
-                    <h3 data-aos='fade-right' className="text-[32px] text-[#2D2D2D] lg:ml-[85px] md:ml-[10px] md:mb-[280px]">Tariff plan</h3>
+                    <h3 data-aos='fade-right' className="text-[32px] text-[#2D2D2D] lg:ml-[85px] md:ml-[10px] md:mb-[280px]">Membership</h3>
                 </div>
                 <div className="sm:mt-[-280px] sm:ml-[150px] lg:ml-[210px]">
-                    <h2 data-aos='fade-up' className="text-[#8D8D8D] text-[32px] lg:mt-[-280px] ml-[-105px]">5+ Meeting rooms</h2>
+                    <h2 data-aos='fade-up' className="text-[#8D8D8D] text-[32px] lg:mt-[-280px] ml-[-105px]">1 0+ Offices</h2>
                     <p data-aos='fade-up' className="text-[20px] sm:w-[80%] text-[#2D2D2D] w-[390px] mt-8 ml-[-105px]">
-                        Our meeting rooms blend functionality with sophistication, providing the perfect setting for
-                        your professional endeavors.
+                        Our offices are meticulously designed to elevate your work experience, offering a sanctuary for focus, collaboration, and innovation.
                     </p>
                 </div>
             </div>
@@ -52,7 +51,7 @@ function Offece(props) {
 
 
                     <div className={"ml-[450px] mt-[-400px]  sm:ml-0 sm:mt-0"}>
-                        <h3 className={"ml-[-18px] sm:ml-0 sm:pl-4"}>Office for main team</h3>
+                        <h3 className={"ml-[-18px] sm:ml-0 sm:pl-4 text-[#7C7C7C] text-[18px]"}>Office for main team</h3>
                         <h2 className="text-[30px] text-[#2D2D2D] mt-1 sm:text-[30px] ml-[-20px] sm:ml-0 sm:pl-4">5 000 000 uzs<span
                             className="text-[#797979] text-[20px] sm:text-[18px] ">/Month </span></h2>
 
@@ -106,7 +105,7 @@ function Offece(props) {
 
 
                     <div className={"ml-[450px] mt-[-400px]  sm:ml-0 sm:mt-4 sm:pl-4"}>
-                        <h3 className={"ml-[-18px] sm:ml-0"}>Office for main team</h3>
+                        <h3 className={"ml-[-18px] sm:ml-0 text-[#7C7C7C] text-[18px]"}>Office for main team</h3>
                         <h2 className="text-[30px] text-[#2D2D2D] mt-1 sm:text-[30px] ml-[-20px] sm:ml-0 ">8 000 000 uzs<span
                             className="text-[#797979] text-[20px] sm:text-[18px] ">/Month </span></h2>
 
@@ -160,7 +159,7 @@ function Offece(props) {
 
 
                     <div className={"ml-[450px] mt-[-400px] sm:ml-0 sm:mt-4 "}>
-                        <h3 className={"ml-[-18px] sm:ml-0 sm:pl-4"}>Office for main team</h3>
+                        <h3 className={"ml-[-18px] sm:ml-0 sm:pl-4 text-[#7C7C7C] text-[18px]"}>Office for main team</h3>
                         <h2 className="text-[30px] text-[#2D2D2D] mt-1 sm:text-[30px] ml-[-20px] sm:ml-0 sm:pl-4">22 000 000 uzs<span
                             className="text-[#797979] text-[20px] sm:text-[18px]">/Month </span></h2>
 

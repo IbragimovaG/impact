@@ -20,8 +20,9 @@ export default function Home() {
     <div >
       <Navbar color={"white"} />
       <div className="bg-[#1C1C1C]">
-        <h1 data-aos='fade-down' className="bg-gradient-to-r from-[#F9F9F9] to-[#939393] bg-clip-text text-transparent text-center w-3/4 text-8xl m-auto py-44 px-20 md:text-5xl md:w-full md:px-10">
-          The place for people with global ambitions
+        <h1 data-aos='fade-down'
+            className="bg-gradient-to-r from-[#F9F9F9] to-[#939393] bg-clip-text text-transparent text-center w-3/4 text-8xl m-auto pt-44 pb-24 px-20 md:text-5xl md:w-full md:px-10">
+          The place for <br/> a people with global<br/> ambitions
         </h1>
         <hr className="w-[92%] m-auto" />
         <div className="grid grid-cols-3 text-[#EBEBEB] px-14 pt-10 pb-20 gap-6 md:grid-cols-1">
@@ -48,14 +49,14 @@ export default function Home() {
           of the future.
         </p>
         <div className="text-lg flex flex-col gap-8 pb-28 w-full">
-          <h1 data-aos='fade-right' data-aos-duration='1000' data-aos-delay='200'>
+          <h1 data-aos='fade-right' data-aos-duration='1000' data-aos-delay='200' className={'text-[22.5px] tracking-[-4%] leading-[32.15px]'}>
             <span className="pl-12">
               A place where a community is born, where
             </span>
             people help each other create useful companies and products, and
             also exchange experiences and knowledge, making new acquaintances.
           </h1>
-          <h1 data-aos='fade-right' data-aos-duration='1000' data-aos-delay='300'>
+          <h1 data-aos='fade-right' data-aos-duration='1000' data-aos-delay='300'  className={'text-[22.5px] tracking-[-4%] leading-[32.15px]'}>
             Discover a vibrant coworking community designed for productivity,
             collaboration, and success!
           </h1>
@@ -71,7 +72,7 @@ export default function Home() {
       </div>
       <div className="rounded-t-3xl p-14 bg-[#2D2D2D] flex justify-between gap-14 text-[#EBEBEB] md:flex-wrap md:p-5">
         <div className="card w-1/2 md:w-full">
-          <img  data-aos='zoom-in'
+          <img data-aos='zoom-in'
             src={require("../../assets/images/home/img-3.png")}
             className="rounded-2xl object-cover h-[420px] md:h-[200px]"
           />
@@ -121,7 +122,7 @@ export default function Home() {
         <h1 className="text-2xl">Our Spaces</h1>
         <div className="mt-10 flex gap-9 md:flex-wrap">
           <div data-aos='fade-up' className="card w-1/3 bg-no-repeat bg-cover relative md:w-full">
-            <img 
+            <img
               src={require("../../assets/images/home/img-5.png")}
               className="object-cover w-full"
             />
@@ -133,7 +134,7 @@ export default function Home() {
               </div>
               <div className="flex justify-between items-end">
                 <div>
-                  <h1>Open space</h1>
+                  <h1 className={'text-[22.5px]'}>Open space</h1>
                   <p>Starting 70 000 uzs / day</p>
                 </div>
                 <div className="h-10 w-10 bg-[#EBEBEB] rounded-full flex items-center justify-center">
@@ -142,7 +143,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div data-aos='fade-up'  className="card w-1/3 bg-no-repeat bg-cover relative md:w-full">
+          <div data-aos='fade-up' className="card w-1/3 bg-no-repeat bg-cover relative md:w-full">
             <img
               src={require("../../assets/images/home/img-6.png")}
               className="object-cover w-full"
@@ -155,7 +156,7 @@ export default function Home() {
               </div>
               <div className="flex justify-between items-end">
                 <div>
-                  <h1>Meeting Rooms</h1>
+                  <h1 className={'text-[22.5px]'}>Meeting Rooms</h1>
                   <p>Starting 100 000 uzs / hourse</p>
                 </div>
                 <div className="h-10 w-10 bg-[#EBEBEB] rounded-full flex items-center justify-center">
@@ -177,7 +178,7 @@ export default function Home() {
               </div>
               <div className="flex justify-between items-end">
                 <div>
-                  <h1>Offices</h1>
+                  <h1 className={'text-[22.5px]'}>Offices</h1>
                   <p>Starting 5 000 000 uzs / month</p>
                 </div>
                 <div className="h-10 w-10 bg-[#EBEBEB] rounded-full flex items-center justify-center">
@@ -188,24 +189,24 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-between my-14 md:flex-wrap">
-          <h1 className="text-2xl">Our Advantages</h1>
+          <h1 className="text-[25.72px]">Our Advantages</h1>
           <div className="w-3/5 md:w-full">
-            <h1 className="text-[#8D8D8D]">Coworking = Networking</h1>
+            <h1 className="text-[#8D8D8D] text-[25.72px]">Coworking = Networking</h1>
             <div className="flex my-6 md:flex-wrap md:gap-5">
-              <p className="w-1/2 md:w-full">
+              <p className="w-1/2 md:w-full tracking-[-3%] text-[16.07px]">
                 Discover the Advantages of choosing <br /> our co-working space
               </p>
-              <p className="w-1/2 md:w-full">
+              <p className="w-1/2 md:w-full  tracking-[-3%] text-[16.07px]">
                 Why choose us? your path to <br /> success starts here
               </p>
             </div>
             <div className="flex flex-col gap-3 text-[#EBEBEB]">
-              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D]">
+              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]">
                 Flexible Schedule and Conditions
               </div>
               <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#FF5722] flex md:flex-wrap gap-8">
-                <div  className="flex flex-col gap-6">
-                  <h1>Extensive Networking</h1>
+                <div className="flex flex-col gap-6">
+                  <h1 className={'text-[22.5px]'}>Extensive Networking</h1>
                   <p>
                     Our community represents a wide range of professionals from
                     various fields. Here, you can easily expand your
@@ -214,16 +215,16 @@ export default function Home() {
                 </div>
                 <img src={require("../../assets/images/home/img-8.png")} />
               </div>
-              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D]">
+              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]">
                 Conveniences and Comfort
               </div>
-              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D]">
+              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]">
                 Interesting Events
               </div>
-              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D]">
+              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]">
                 Continuous Support
               </div>
-              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D]">
+              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]">
                 Unique Atmosphere
               </div>
             </div>
@@ -231,12 +232,12 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[#2D2D2D] p-14 rounded-t-3xl flex justify-between text-[#EBEBEB] md:p-5 md:flex-wrap">
-        <h1 className="text-2xl">Our Partners</h1>
+        <h1 className="text-[25.72px]">Our Partners</h1>
         <div className="w-3/5 md:w-full">
           <h1 className="text-[#8D8D8D]">50+ Company</h1>
           <div className="flex my-6 font-light gap-20 md:flex-wrap md:gap-10">
-            <p className="w-1/2 md:w-full">
-              As a valued partner, your presence enriches our community of
+            <p className="w-1/2 md:w-full tracking-[-3%] text-[16.07px]">
+              As a valued partner, your presence <br/> enriches our community of
               innovators,
               <br className="md:hidden" /> creators, and entrepreneurs
             </p>
@@ -288,7 +289,7 @@ export default function Home() {
           <div className="w-3/5 flex flex-col gap-3 text-[#EBEBEB] md:w-full md:mt-8">
             <div data-aos='fade-right' className="p-10 rounded-2xl bg-white text-black md:p-5">
               <div className="flex justify-between gap-6 md:flex-wrap">
-                <div  className="font-light md:w-full md:flex md:gap-7 md:items-center">
+                <div className="font-light md:w-full md:flex md:gap-7 md:items-center">
                   <Avatar
                     src={require("../../assets/images/home/avatar.png")}
                     size={"large"}
@@ -300,7 +301,7 @@ export default function Home() {
                 </div>
                 <div className="text w-3/4 md:w-full">
                   <h1 className="text-[#B3B3B3]">Quote</h1>
-                  <p className="my-5">
+                  <p className="my-5 text-[16.07px] tracking-[-3%] leading-[22.5px]">
                     Dual feelings. On the one hand, a pleasant renovation,
                     hospitable staff, and on the other, the first floor is
                     packed like sardines, swinging tables on 4 m. The Internet
@@ -321,9 +322,9 @@ export default function Home() {
         </div>
         <div className="my-14 pt-14">
           <div className="flex justify-between md:flex-wrap">
-            <h1 data-aos='fade-right' className="text-2xl">News</h1>
+            <h1 data-aos='fade-right' className="text-[25.72px]">News</h1>
             <div className="w-3/5 md:w-full md:mt-7">
-              <h1 className="text-[#8D8D8D]">CEvents, Blog, News</h1>
+              <h1 className="text-[#8D8D8D] text-[25.72px]">Events, Blog, News</h1>
               <div className="flex my-6">
                 <p data-aos='zoom-in' className="w-1/2 md:w-full">
                   Discover the Discover a treasure trove of articles designed to
@@ -344,7 +345,7 @@ export default function Home() {
                   <ArrowRightOutlined className="text-black scale-125" />
                 </div>
               </div>
-              <h1 className="my-5">
+              <h1 className="my-5 text-[19.29px]">
                 How to hire the right product manager for your company
               </h1>
               <div className="flex items-center gap-2">
@@ -365,10 +366,10 @@ export default function Home() {
                   <ArrowRightOutlined className="text-black scale-125" />
                 </div>
               </div>
-              <h1 className="my-5">Welcome to Impact Studio</h1>
+              <h1 className="my-5 text-[19.29px]">Welcome to Impact Studio</h1>
               <div className="flex items-center gap-2">
                 <p className="text-[#FF5722] flex gap-2 items-center">
-                  <img  src={require("../../assets/images/home/vector-2.png")} />
+                  <img src={require("../../assets/images/home/vector-2.png")} />
                   News
                 </p>
                 <p className="text-[#2D2D2D]">| June 15, 2024 • Read 12 min</p>
@@ -384,7 +385,7 @@ export default function Home() {
                   <ArrowRightOutlined className="text-black scale-125" />
                 </div>
               </div>
-              <h1 className="my-5">Impact.t hub: social innovation hub</h1>
+              <h1 className="my-5 text-[19.29px]">Impact.t hub: social innovation hub</h1>
               <div className="flex items-center gap-2">
                 <p className="text-[#FF5722] flex gap-2 items-center">
                   <img src={require("../../assets/images/home/vector-1.png")} />
