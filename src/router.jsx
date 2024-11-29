@@ -11,7 +11,6 @@ import Offece from './pages/offece/offece'
 export default function Router() { 
   return ( 
     <Routes> 
-
       <Route path="/" element={<Home />} />
       <Route path="/open-space" element={<Index />} /> 
       <Route path="/About" element={<About/>}/> 

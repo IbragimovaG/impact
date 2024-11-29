@@ -6,6 +6,7 @@ import Card3 from "../assets/about/IMG_4961.png";
 import Bg from "../assets/about/Group 73.png";
 import Image from "../assets/about/IMG_4492.png";
 import Nav from "../components/navbar/index"
+import { Link } from "react-router-dom";
 
 const About = () => {
   const cards = [
@@ -30,8 +31,8 @@ const About = () => {
   ];
   return (
     <div>
-      <Nav color={"black"}/>
-      <div className="w-full h-auto pt-20">
+      <Nav color={"white"}/>
+      <div className="w-full h-auto bg-[#EDEDED]">
         <div className="w-full h-[500px] flex flex-col justify-center items-center bg-[#EDEDED]">
           <p data-aos='zoom-out' className="text-[16px]">Elevate Your Work Environment</p>
           <p data-aos='fade-down' data-aos-duration='1000' className="text-[112px] text-center sm:text-[42px] lg:text-[73px]">
@@ -42,14 +43,13 @@ const About = () => {
           <img src={Img} alt="" className="mx-auto w-[1250px] sm:w-[90%] lg:w-[90%]" />
         </div>
         <div className="w-full mx-auto bg-[#EDEDED] h-auto py-5  flex flex-col justify-start items-center gap-16 pt-2 sm:gap-10 sm:pt-0 ">
-          <p data-aos='fade-right' className="text-[70px] w-[95%] mx-auto sm:text-[42px] lg:text-[60px]">
-            {" "}
-            Nestled in the heart of the city, Impact.t hub is more than just a
+          <p data-aos='fade-right' className="text-[60px] w-[90%] sm:mt-10 sm:text-justify sm:text-4xl mx-auto sm:text-[42px] lg:text-[60px]">
+            <span className="ml-28">Nestled </span>in the heart of the city, Impact.t hub is more than just a
             workspace— it's a hub of innovation and social impact
           </p>
           <div className="w-full flex justify-center items-center sm:flex-col sm:px-2 sm:gap-10 lg:items-start lg:justify-start lg:px-7">
             <div className="w-[30%] sm:hidden lg:hidden"></div>
-            <div className="flex justify-end gap-10">
+            <div className="flex justify-end gap-10 sm:flex-col px-14 sm:px-5 sm:gap-0">
               <p data-aos='fade-right' data-aos-delay='300'
                  className="text-[20px] w-[500px] mb-16 sm:w-full  text-[#2D2D2D] leading-[30px] tracking-[-4%] text-justify">
                 With its vibrant community of changemakers, entrepreneurs, and
@@ -72,7 +72,6 @@ const About = () => {
                 need to turn your vision into reality. Join the community and be
                 inspired to create change.
               </p>
-
             </div>
           </div>
         </div>
@@ -80,7 +79,7 @@ const About = () => {
           <p data-aos='fade-right' className="text-[32px] sm:w-full pl-5 w-[30%]">
             Discover a new way of working at Impact.t hub
           </p>
-          <div className="w-full h-auto sm:h-[2000px] flex justify-center items-center gap-5 sm:flex-col mt-20 sm:mt-0">
+          <div className="w-full h-auto sm:h-[2000px] flex justify-center items-center gap-5 sm:flex-col mt-20 sm:-mt-20">
             {cards.map((item, index) => (
                 <div data-aos='zoom-in'
                      key={index}
@@ -104,20 +103,29 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className={"w-full h-screen flex justify-center items-center relative  bg-[#EBEBEB] lg:h-[800px] lg:mt-[-200px]"}>
-                <img data-aos='fade-up' className={"w-[90%] absolute z-10 sm:w-[95%] sm:h-[600px] lg:h-[600px]"} src={Bg} alt=""/>
-                <div className="absolute z-20 ml-[-600px] sm:ml-0 lg:ml-[-40px]"> 
-                    <button className={"w-[180px] mb-72  ml-10  text-[15px] h-[50px] sm:ml-5 sm:mb-10 lg:ml-[-40px] bg-white rounded-[90px] text-[#2D2D2D]"}>GALLERY</button>
-<h2 className={"text-[48px] text-white ml-10 sm:ml-5 lg:ml-[-40px]"}>See all our points!</h2>
-                    <h3 className={"w-[602px] text-white text-[24px] ml-10 sm:w-[90%] sm:ml-5 lg:ml-[-40px] "}>Discover all our points and take advantage of the amazing benefits and rewards available to you today!</h3>
-                </div>
-                <div className="absolute z-20 ml-[480px] sm:ml-0 mt-[310px] lg:ml-0 sm:mt-80 lg:mt-[140px]">
-                    <button className={"w-[180px] h-[50px] text-[15px] text-[#FF5722]  rounded-[90px] bg-white mt-[130px] ml-[500px] sm:ml-[-170px] sm:mt-[150px]"}>VIEW ALL</button>
+        <div className='w-full pt-24 px-12 sm:px-3'>
+                <div data-aos='fade-up' className='rounded-[30px] bg-backgroundImageAboutStudio bg-no-repeat bg-cover px-20 lg:px-10 lg:py-10 py-16 h-auto w-full sm:text-center'>
+                    <Link to={'/gallery'}>
+                        <button className='w-36 h-10 bg-white rounded-full'>
+                            GALLERY
+                        </button></Link>
+                    <div className='pt-52 w-full flex sm:flex-col sm:py-5 sm:justify-center sm:items-center justify-between items-end'>
+                        <div >
+                            <h3 className='text-3xl text-white sm:pt-10'>See all our points!</h3>
+                            <h4 className='text-2xl font-light w-7/12 pt-5 sm:m-auto sm:w-11/12 sm:my-5 text-white'>Discover all our points and take advantage of the amazing benefits and rewards available to you today!</h4>
+                        </div>
+                        <div>
+                            <Link to={'/gallery'}>
+                                <button className='w-36 h-10 sm:mt-5 text-[#FF5722] bg-white rounded-full'>
+                                    VIEW ALL
+                                </button></Link>
+                        </div>
+                    </div>
                 </div>
             </div>
-        <div className="w-full h-[600px]  mb-12 sm:mb-0 sm:h-auto sm:py-8 bg-[#EDEDED] flex justify-center items-center gap-10 px-10 sm:flex-col lg:flex-col lg:h-auto lg:py-10">
-          <img data-aos='fade-down' data-aos-duration='1000' src={Image} alt="" className="pl-7 sm:pl-0 lg:pl-0"/>
-          <div data-aos='fade-down' data-aos-duration='1000' data-aos-delay='200' className="w-auto h-[540px] flex flex-col pt-20 px-5 bg-[#2D2D2D] rounded-[20px] sm:h-[540px] lg:pt-5 lg:h-[400px]">
+        <div className="w-full py-36 sm:h-auto sm:py-20 bg-[#EDEDED] flex justify-center items-center gap-10 px-10 sm:flex-col sm:px-5">
+          <img data-aos='fade-down' data-aos-duration='1000' src={Image} alt="" className="pl-7 sm:pl-0 lg:pl-0 sm:rounded-3xl"/>
+          <div data-aos='fade-down' data-aos-duration='1000' data-aos-delay='200' className="w-auto h-[540px] flex flex-col pt-20 px-5 bg-[#2D2D2D] rounded-[20px] sm:h-[420px] lg:pt-5 lg:h-[400px]">
             <p className="text-[24px] text-white">
               With its focus on social innovation and community empowerment,
               this coworking space is a breeding ground for impactful ideas.

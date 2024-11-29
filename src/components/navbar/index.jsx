@@ -21,7 +21,7 @@ export default function Navbar({ color }) {
   const toggle = () => setState(!state);
 
   return (
-    <nav
+    <nav 
       className={`w-full fixed top-0 grid grid-cols-3 px-14 py-8 align-baseline text-xs font-normal z-50 transition-all md:grid-cols-1 md:p-14 ${top > 100 ? (color == "black" ? "bg-white" : "bg-black") : ""
         } ${color == "black" ? "text-black md:bg-white" : "text-white md:bg-black"
         } ${state ? 0 : "top-[-100%]"}`}

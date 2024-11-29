@@ -61,7 +61,7 @@ export default function Home() {
             collaboration, and success!
           </h1>
         </div>
-        <img data-aos='fade-left' data-aos-duration='1000'
+        <img data-aos='fade-right' data-aos-duration='1000'
           src={require("../../assets/images/home/img-1.png")}
           className="md:w-full"
         />
@@ -234,7 +234,7 @@ export default function Home() {
       <div className="bg-[#2D2D2D] p-14 rounded-t-3xl flex justify-between text-[#EBEBEB] md:p-5 md:flex-wrap">
         <h1 className="text-[25.72px]">Our Partners</h1>
         <div className="w-3/5 md:w-full">
-          <h1 className="text-[#8D8D8D]">50+ Company</h1>
+          <h1 className="text-[#8D8D8D]   text-[25px] text-[230]">50+ Company</h1>
           <div className="flex my-6 font-light gap-20 md:flex-wrap md:gap-10">
             <p className="w-1/2 md:w-full tracking-[-3%] text-[16.07px]">
               As a valued partner, your presence <br/> enriches our community of
