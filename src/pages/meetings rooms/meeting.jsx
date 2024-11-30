@@ -26,7 +26,7 @@ function Meeting(props) {
                 </button>
             </div>
             <div className="flex w-full h-auto pb-20 pt-32 bg-[#EBEBEB]">
-                <div data-aos='zoom-in' className="flex sm:flex-col sm:pt-44 w-full justify-between px-14 sm:px-5">
+                <div data-aos='zoom-in' className="flex sm:flex-col-reverse  sm:pt-44 w-full justify-between px-14 sm:px-5">
                     <h3 className="text-[32px] text-[#2D2D2D] w-[50%] sm:w-full">Tariff plan</h3>
                     <div data-aos='fade-up' className="w-[50%] sm:w-full">
                         <h2 className="text-[#8D8D8D] text-[32px] lg:mt-[-280px] ">5+ Meeting rooms</h2>

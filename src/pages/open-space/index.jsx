@@ -21,12 +21,12 @@ function Index(props) {
                 </button>
             </div>
 
-            <div className="flex w-full h-[60vh] pb-20 pt-32 bg-[#EBEBEB]">
+            <div className="flex w-full h-[60vh] pb-20 pt-32 sm:mt-28 bg-[#EBEBEB]">
                 <div className=" flex sm:flex-col-reverse w-screen px-14 sm:px-5 ">
                     <h3 data-aos='fade-right' className="text-[32px] w-[40%] sm:w-full text-[#2D2D2D]">Membership</h3>
                     <div className='w-[60%] sm:w-full'>
                     <h2 data-aos='fade-down' className="text-[#8D8D8D] text-[32px] lg:mt-[-280px]">120+ Places</h2>
-                    <p data-aos='zoom-out' className="text-[20px] text-[#2D2D2D] mt-8 w-[45%] sm:w-full ">
+                    <p data-aos='zoom-in' className="text-[20px] text-[#2D2D2D] mt-8 w-[45%] sm:w-full ">
                         Our co-working environment is more than just shared desks. It's a community-driven ecosystem
                         designed to elevate your work experience
                     </p>

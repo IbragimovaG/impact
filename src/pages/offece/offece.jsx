@@ -38,7 +38,7 @@ function Offece(props) {
                 </div>
                 <div className="sm:mt-[-280px] sm:ml-[150px] lg:ml-[210px]">
                     <h2 data-aos='fade-up' className="text-[#8D8D8D] text-[32px] lg:mt-[-280px] ml-[-105px]">10+ Offices</h2>
-                    <p data-aos='fade-up' className="text-[20px] sm:w-[80%] text-[#2D2D2D] w-[390px] mt-8 ml-[-105px]">
+                    <p data-aos='fade-up' className="text-[20px] sm:w-[100%] text-[#2D2D2D] w-[390px] mt-8 ml-[-105px]">
                         Our offices are meticulously designed to elevate your work experience, offering a sanctuary for focus, collaboration, and innovation.
                     </p>
                 </div>

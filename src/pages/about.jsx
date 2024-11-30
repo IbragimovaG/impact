@@ -79,7 +79,7 @@ const About = () => {
           <p data-aos='fade-right' className="text-[32px] sm:w-full pl-5 w-[30%]">
             Discover a new way of working at Impact.t hub
           </p>
-          <div className="w-full h-auto sm:h-[2000px] flex justify-center items-center gap-5 sm:flex-col mt-20 sm:-mt-20">
+          <div className="w-full h-auto sm:h-[1700px] flex justify-center items-center gap-5 sm:flex-col mt-20">
             {cards.map((item, index) => (
                 <div data-aos='zoom-in'
                      key={index}
@@ -103,7 +103,7 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className='w-full pt-24 px-12 sm:px-3'>
+        <div className='w-full pt-24 sm:pt-10 px-12 sm:px-3'>
                 <div data-aos='fade-up' className='rounded-[30px] bg-backgroundImageAboutStudio bg-no-repeat bg-cover px-20 lg:px-10 lg:py-10 py-16 h-auto w-full sm:text-center'>
                     <Link to={'/gallery'}>
                         <button className='w-36 h-10 bg-white rounded-full'>
