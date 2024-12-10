@@ -5,11 +5,11 @@ import {
   LeftOutlined,
   RightOutlined,
 } from "@ant-design/icons";
-import "./styles.scss";
 import { Avatar } from "antd";
 import "aos/dist/aos.css";
-import AOS from 'aos'
+import AOS from "aos";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -17,62 +17,91 @@ export default function Home() {
     });
   }, []);
   return (
-    <div >
+    <div>
       <Navbar color={"white"} />
       <div className="bg-[#1C1C1C]">
-        <h1 data-aos='fade-down'
-            className="bg-gradient-to-r from-[#F9F9F9] to-[#939393] bg-clip-text text-transparent text-center w-3/4 text-8xl m-auto pt-44 pb-24 px-20 md:text-5xl md:w-full md:px-10">
-          The place for <br/> a people with global<br/> ambitions
+        <h1
+          data-aos="fade-down"
+          className="bg-gradient-to-r from-[#F9F9F9] to-[#939393] bg-clip-text text-transparent text-center w-3/4 text-8xl m-auto pt-44 pb-24 px-20 md:text-5xl md:w-full md:px-10"
+        >
+          The place for <br /> a people with global
+          <br /> ambitions
         </h1>
         <hr className="w-[92%] m-auto" />
         <div className="grid grid-cols-3 text-[#EBEBEB] px-14 pt-10 pb-20 gap-6 md:grid-cols-1">
-          <p data-aos='fade-up' className="md:text-center">
+          <p data-aos="fade-up" className="md:text-center">
             The largest coworking <br /> center in Uzbekistan
           </p>
-          <p data-aos='fade-up' data-aos-delay="200" className="flex items-center gap-3 m-auto">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="flex items-center gap-3 m-auto"
+          >
             Play the video
             <div className="h-10 w-10 bg-[#EBEBEB] rounded-full flex items-center justify-center">
               <CaretRightFilled className="text-black scale-125" />
             </div>
           </p>
-          <div data-aos='fade-up' data-aos-delay="300" className="flex justify-end md:justify-center">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            className="flex justify-end md:justify-center"
+          >
+            <Link to="/about-studio">
             <button className="h-12 bg-[#FF5A26] w-[170px] rounded-full">
               OUR SPACES
             </button>
+            </Link>
           </div>
         </div>
       </div>
       <div className="bg-[#EBEBEB] p-14 rounded-t-3xl grid grid-cols-2 -mt-6 md:grid-cols-1 md:p-5">
-        <p data-aos='fade-down' className="pb-28">
+        <p data-aos="fade-down" className="pb-28">
           IMPACT.T is a technological hub <br /> for people who build the
           companies <br />
           of the future.
         </p>
         <div className="text-lg flex flex-col gap-8 pb-28 w-full">
-          <h1 data-aos='fade-right' data-aos-duration='1000' data-aos-delay='200' className={'text-[22.5px] tracking-[-4%] leading-[32.15px]'}>
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            className={"text-[22.5px] tracking-[-4%] leading-[32.15px]"}
+          >
             <span className="pl-12">
               A place where a community is born, where
             </span>
             people help each other create useful companies and products, and
             also exchange experiences and knowledge, making new acquaintances.
           </h1>
-          <h1 data-aos='fade-right' data-aos-duration='1000' data-aos-delay='300'  className={'text-[22.5px] tracking-[-4%] leading-[32.15px]'}>
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            className={"text-[22.5px] tracking-[-4%] leading-[32.15px]"}
+          >
             Discover a vibrant coworking community designed for productivity,
             collaboration, and success!
           </h1>
         </div>
-        <img data-aos='fade-right' data-aos-duration='1000'
+        <img
+          data-aos="fade-right"
+          data-aos-duration="1000"
           src={require("../../assets/images/home/img-1.png")}
           className="md:w-full"
         />
-        <img data-aos='fade-right' data-aos-duration='1000' data-aos-delay-='1000'
+        <img
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay-="1000"
           src={require("../../assets/images/home/img-2.png")}
           className="w-full md:mt-8"
         />
       </div>
       <div className="rounded-t-3xl p-14 bg-[#2D2D2D] flex justify-between gap-14 text-[#EBEBEB] md:flex-wrap md:p-5">
         <div className="card w-1/2 md:w-full">
-          <img data-aos='zoom-in'
+          <img
+            data-aos="zoom-in"
             src={require("../../assets/images/home/img-3.png")}
             className="rounded-2xl object-cover h-[420px] md:h-[200px]"
           />
@@ -88,14 +117,18 @@ export default function Home() {
                 Tashkent, Chilanzar district, <br />
                 Bogibuston Street 186
               </p>
-              <button className="bg-[#EBEBEB] text-black rounded-full py-2 px-5 text-sm">
+              <Link
+                to="/about-studio"
+                className="bg-[#EBEBEB] text-black rounded-full py-2 px-5 text-sm"
+              >
                 MORE INFO
-              </button>
+              </Link>
             </div>
           </div>
         </div>
         <div className="card w-1/2 md:w-full">
-          <img data-aos='zoom-in'
+          <img
+            data-aos="zoom-in"
             src={require("../../assets/images/home/img-4.png")}
             className="rounded-2xl object-cover h-[420px] md:h-[200px]"
           />
@@ -111,9 +144,12 @@ export default function Home() {
                 Tashkent, Yakkasaray district,
                 <br /> Abdulla Qahhar Street 30a
               </p>
-              <button className="bg-[#EBEBEB] text-black rounded-full py-2 px-5 text-sm">
+              <Link
+                to="/about-studio"
+                className="bg-[#EBEBEB] text-black rounded-full py-2 px-5 text-sm"
+              >
                 MORE INFO
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -121,7 +157,10 @@ export default function Home() {
       <div className="rounded-t-3xl p-14 -mt-6 bg-[#EBEBEB] md:p-5">
         <h1 className="text-2xl">Our Spaces</h1>
         <div className="mt-10 flex gap-9 md:flex-wrap">
-          <div data-aos='fade-up' className="card w-1/3 bg-no-repeat bg-cover relative md:w-full">
+          <div
+            data-aos="fade-up"
+            className="card w-1/3 bg-no-repeat bg-cover relative md:w-full"
+          >
             <img
               src={require("../../assets/images/home/img-5.png")}
               className="object-cover w-full"
@@ -134,16 +173,21 @@ export default function Home() {
               </div>
               <div className="flex justify-between items-end">
                 <div>
-                  <h1 className={'text-[22.5px]'}>Open space</h1>
+                  <h1 className={"text-[22.5px]"}>Open space</h1>
                   <p>Starting 70 000 uzs / day</p>
                 </div>
                 <div className="h-10 w-10 bg-[#EBEBEB] rounded-full flex items-center justify-center">
-                  <ArrowRightOutlined className="text-black scale-125" />
+                  <Link to="/open-space">
+                    <ArrowRightOutlined className="text-black scale-125" />
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-          <div data-aos='fade-up' className="card w-1/3 bg-no-repeat bg-cover relative md:w-full">
+          <div
+            data-aos="fade-up"
+            className="card w-1/3 bg-no-repeat bg-cover relative md:w-full"
+          >
             <img
               src={require("../../assets/images/home/img-6.png")}
               className="object-cover w-full"
@@ -156,16 +200,21 @@ export default function Home() {
               </div>
               <div className="flex justify-between items-end">
                 <div>
-                  <h1 className={'text-[22.5px]'}>Meeting Rooms</h1>
+                  <h1 className={"text-[22.5px]"}>Meeting Rooms</h1>
                   <p>Starting 100 000 uzs / hourse</p>
                 </div>
                 <div className="h-10 w-10 bg-[#EBEBEB] rounded-full flex items-center justify-center">
-                  <ArrowRightOutlined className="text-black scale-125" />
+                  <Link to="/rooms">
+                    <ArrowRightOutlined className="text-black scale-125" />
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-          <div data-aos='fade-up' className="card w-1/3 bg-no-repeat bg-cover relative md:w-full">
+          <div
+            data-aos="fade-up"
+            className="card w-1/3 bg-no-repeat bg-cover relative md:w-full"
+          >
             <img
               src={require("../../assets/images/home/img-7.png")}
               className="object-cover w-full"
@@ -178,11 +227,13 @@ export default function Home() {
               </div>
               <div className="flex justify-between items-end">
                 <div>
-                  <h1 className={'text-[22.5px]'}>Offices</h1>
+                  <h1 className={"text-[22.5px]"}>Offices</h1>
                   <p>Starting 5 000 000 uzs / month</p>
                 </div>
                 <div className="h-10 w-10 bg-[#EBEBEB] rounded-full flex items-center justify-center">
-                  <ArrowRightOutlined className="text-black scale-125" />
+                  <Link to="/office">
+                    <ArrowRightOutlined className="text-black scale-125" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -191,7 +242,9 @@ export default function Home() {
         <div className="flex justify-between my-14 md:flex-wrap">
           <h1 className="text-[25.72px]">Our Advantages</h1>
           <div className="w-3/5 md:w-full">
-            <h1 className="text-[#8D8D8D] text-[25.72px]">Coworking = Networking</h1>
+            <h1 className="text-[#8D8D8D] text-[25.72px]">
+              Coworking = Networking
+            </h1>
             <div className="flex my-6 md:flex-wrap md:gap-5">
               <p className="w-1/2 md:w-full tracking-[-3%] text-[16.07px]">
                 Discover the Advantages of choosing <br /> our co-working space
@@ -201,12 +254,18 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-3 text-[#EBEBEB]">
-              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]">
+              <div
+                data-aos="fade-right"
+                className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]"
+              >
                 Flexible Schedule and Conditions
               </div>
-              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#FF5722] flex md:flex-wrap gap-8">
+              <div
+                data-aos="fade-right"
+                className="p-10 rounded-2xl bg-[#FF5722] flex md:flex-wrap gap-8"
+              >
                 <div className="flex flex-col gap-6">
-                  <h1 className={'text-[22.5px]'}>Extensive Networking</h1>
+                  <h1 className={"text-[22.5px]"}>Extensive Networking</h1>
                   <p>
                     Our community represents a wide range of professionals from
                     various fields. Here, you can easily expand your
@@ -215,16 +274,28 @@ export default function Home() {
                 </div>
                 <img src={require("../../assets/images/home/img-8.png")} />
               </div>
-              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]">
+              <div
+                data-aos="fade-right"
+                className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]"
+              >
                 Conveniences and Comfort
               </div>
-              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]">
+              <div
+                data-aos="fade-right"
+                className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]"
+              >
                 Interesting Events
               </div>
-              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]">
+              <div
+                data-aos="fade-right"
+                className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]"
+              >
                 Continuous Support
               </div>
-              <div data-aos='fade-right' className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]">
+              <div
+                data-aos="fade-right"
+                className="p-10 rounded-2xl bg-[#2D2D2D] text-[22.5px]"
+              >
                 Unique Atmosphere
               </div>
             </div>
@@ -234,11 +305,13 @@ export default function Home() {
       <div className="bg-[#2D2D2D] p-14 rounded-t-3xl flex justify-between text-[#EBEBEB] md:p-5 md:flex-wrap">
         <h1 className="text-[25.72px]">Our Partners</h1>
         <div className="w-3/5 md:w-full">
-          <h1 className="text-[#8D8D8D]   text-[25px] text-[230]">50+ Company</h1>
+          <h1 className="text-[#8D8D8D]   text-[25px] text-[230]">
+            50+ Company
+          </h1>
           <div className="flex my-6 font-light gap-20 md:flex-wrap md:gap-10">
             <p className="w-1/2 md:w-full tracking-[-3%] text-[16.07px]">
-              As a valued partner, your presence <br/> enriches our community of
-              innovators,
+              As a valued partner, your presence <br /> enriches our community
+              of innovators,
               <br className="md:hidden" /> creators, and entrepreneurs
             </p>
             <p className="w-1/2 md:w-full">
@@ -248,35 +321,62 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-3 grid-rows-3 gap-5 md:grid-cols-2">
-            <div data-aos='zoom-in' className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl">
+            <div
+              data-aos="zoom-in"
+              className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl"
+            >
               <img src={require("../../assets/images/home/kfc.png")} />
             </div>
-            <div data-aos='zoom-in' className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl">
+            <div
+              data-aos="zoom-in"
+              className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl"
+            >
               <img src={require("../../assets/images/home/payme.png")} />
             </div>
-            <div data-aos='zoom-in' className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl">
+            <div
+              data-aos="zoom-in"
+              className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl"
+            >
               <img src={require("../../assets/images/home/korzina.png")} />
             </div>
-            <div data-aos='zoom-in' className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl">
+            <div
+              data-aos="zoom-in"
+              className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl"
+            >
               <img src={require("../../assets/images/home/tbc.png")} />
             </div>
-            <div data-aos='zoom-in' className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl">
+            <div
+              data-aos="zoom-in"
+              className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl"
+            >
               <img src={require("../../assets/images/home/taxi.png")} />
             </div>
-            <div data-aos='zoom-in' className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl">
+            <div
+              data-aos="zoom-in"
+              className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl"
+            >
               <img src={require("../../assets/images/home/epam.png")} />
             </div>
-            <div data-aos='zoom-in' className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl">
+            <div
+              data-aos="zoom-in"
+              className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl"
+            >
               <img src={require("../../assets/images/home/itpark.png")} />
             </div>
-            <div data-aos='zoom-in' className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl">
+            <div
+              data-aos="zoom-in"
+              className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl"
+            >
               <img src={require("../../assets/images/home/cloud.png")} />
             </div>
-            <div data-aos='zoom-in' className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl">
+            <div
+              data-aos="zoom-in"
+              className="bg-[#989898] py-8 px-12 flex items-center justify-center rounded-xl"
+            >
               <img src={require("../../assets/images/home/bank.png")} />
             </div>
           </div>
-          <div data-aos='fade-right' className="flex justify-end my-8">
+          <div data-aos="fade-right" className="flex justify-end my-8">
             <button className="bg-transparent border px-7 py-3 rounded-full">
               SHOW ALL
             </button>
@@ -285,9 +385,14 @@ export default function Home() {
       </div>
       <div className="rounded-t-3xl p-14 -mt-6 bg-[#EBEBEB] md:p-5">
         <div className="flex justify-between my-14 md:flex-wrap">
-          <h1 className="text-2xl" data-aos='fade-right'>Reviews</h1>
+          <h1 className="text-2xl" data-aos="fade-right">
+            Reviews
+          </h1>
           <div className="w-3/5 flex flex-col gap-3 text-[#EBEBEB] md:w-full md:mt-8">
-            <div data-aos='fade-right' className="p-10 rounded-2xl bg-white text-black md:p-5">
+            <div
+              data-aos="fade-right"
+              className="p-10 rounded-2xl bg-white text-black md:p-5"
+            >
               <div className="flex justify-between gap-6 md:flex-wrap">
                 <div className="font-light md:w-full md:flex md:gap-7 md:items-center">
                   <Avatar
@@ -322,11 +427,15 @@ export default function Home() {
         </div>
         <div className="my-14 pt-14">
           <div className="flex justify-between md:flex-wrap">
-            <h1 data-aos='fade-right' className="text-[25.72px]">News</h1>
+            <h1 data-aos="fade-right" className="text-[25.72px]">
+              News
+            </h1>
             <div className="w-3/5 md:w-full md:mt-7">
-              <h1 className="text-[#8D8D8D] text-[25.72px]">Events, Blog, News</h1>
+              <h1 className="text-[#8D8D8D] text-[25.72px]">
+                Events, Blog, News
+              </h1>
               <div className="flex my-6">
-                <p data-aos='zoom-in' className="w-1/2 md:w-full">
+                <p data-aos="zoom-in" className="w-1/2 md:w-full">
                   Discover the Discover a treasure trove of articles designed to
                   fuel your creativity, enhance your productivity, and keep you
                   connected with the pulse of the co-working world
@@ -337,13 +446,16 @@ export default function Home() {
           <div className="flex gap-10 mt-10 justify-between md:flex-wrap">
             <div className="card w-1/3 bg-no-repeat bg-cover relative md:w-full">
               <div className="relative">
-                <img data-aos='fade-up'
+                <img
+                  data-aos="fade-up"
                   src={require("../../assets/images/home/card-1.png")}
                   className="w-full"
                 />
-                <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center absolute bottom-7 right-7">
-                  <ArrowRightOutlined className="text-black scale-125" />
-                </div>
+                <Link to="/new">
+                  <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center absolute bottom-7 right-7">
+                    <ArrowRightOutlined className="text-black scale-125" />
+                  </div>
+                </Link>
               </div>
               <h1 className="my-5 text-[19.29px]">
                 How to hire the right product manager for your company
@@ -358,13 +470,16 @@ export default function Home() {
             </div>
             <div className="card w-1/3 bg-no-repeat bg-cover relative md:w-full">
               <div className="relative">
-                <img data-aos='fade-up'
+                <img
+                  data-aos="fade-up"
                   src={require("../../assets/images/home/card-2.png")}
                   className="w-full"
                 />
-                <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center absolute bottom-7 right-7">
-                  <ArrowRightOutlined className="text-black scale-125" />
-                </div>
+                <Link to="/new">
+                  <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center absolute bottom-7 right-7">
+                    <ArrowRightOutlined className="text-black scale-125" />
+                  </div>
+                </Link>
               </div>
               <h1 className="my-5 text-[19.29px]">Welcome to Impact Studio</h1>
               <div className="flex items-center gap-2">
@@ -377,15 +492,20 @@ export default function Home() {
             </div>
             <div className="card w-1/3 bg-no-repeat bg-cover relative md:w-full">
               <div className="relative">
-                <img data-aos='fade-up'
+                <img
+                  data-aos="fade-up"
                   src={require("../../assets/images/home/card-3.png")}
                   className="w-full"
                 />
-                <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center absolute bottom-7 right-7">
-                  <ArrowRightOutlined className="text-black scale-125" />
-                </div>
+                <Link to="/new">
+                  <div className="h-10 w-10 bg-white rounded-full flex items-center justify-center absolute bottom-7 right-7">
+                    <ArrowRightOutlined className="text-black scale-125" />
+                  </div>
+                </Link>
               </div>
-              <h1 className="my-5 text-[19.29px]">Impact.t hub: social innovation hub</h1>
+              <h1 className="my-5 text-[19.29px]">
+                Impact.t hub: social innovation hub
+              </h1>
               <div className="flex items-center gap-2">
                 <p className="text-[#FF5722] flex gap-2 items-center">
                   <img src={require("../../assets/images/home/vector-1.png")} />
